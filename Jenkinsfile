@@ -7,6 +7,10 @@ pipeline {
                 sh "echo webhook-delivery-successful"
             }
         }
-
+        stage("Test") {
+            steps {
+                sh "echo test-successful"
+            }
+        }
     }
 }
